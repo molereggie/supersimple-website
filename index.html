@@ -88,10 +88,14 @@
           class="cs-form"
           id="cs-form-1388"
           name="contact"
-          netlify
-          method="post"
+          method="POST"
+          data-netlify="true"
         >
+          <!-- ✅ This hidden input is required for Netlify to detect the form -->
+          <input type="hidden" name="form-name" value="contact" />
+
           <h3 class="cs-h3">Make Appointment</h3>
+
           <label class="cs-label">
             Name
             <input
